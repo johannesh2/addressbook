@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;PAPER_WIDTH&quot;:1032,&quot;PAPER_HEIGHT&quot;:501,&quot;PAPER_SCROLL_LEFT&quot;:1950,&quot;PAPER_SCROLL_TOP&quot;:2216,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+ </head> 
+ <body> 
+  <v-horizontal-layout primary-style-name="v-horizontallayout" size-full="true"> 
+   <v-vertical-layout primary-style-name="v-verticallayout" size-full="true" :expand=""> 
+    <v-horizontal-layout primary-style-name="v-horizontallayout" width-full="true"> 
+     <v-text-field input-prompt="Filter contacts..." width-full="true" _id="filter" :expand=""></v-text-field> 
+     <v-button plain-text="" _id="newContact">
+       New contact 
+     </v-button> 
+    </v-horizontal-layout> 
+    <v-grid size-full="true" _id="contactList" :expand=""></v-grid> 
+   </v-vertical-layout> 
+   <v-form-layout size-auto="true" margin="true" _id="contactForm"> 
+    <v-horizontal-layout spacing="true"> 
+     <v-button style-name="primary" _id="save">
+       Save 
+     </v-button> 
+     <v-button _id="cancel">
+       Cancel 
+     </v-button> 
+    </v-horizontal-layout> 
+    <v-text-field caption="First name" _id="firstName"></v-text-field> 
+    <v-text-field caption="Last name" _id="lastName"></v-text-field> 
+    <v-text-field caption="Phone" _id="phone"></v-text-field> 
+    <v-text-field caption="Email" _id="email"></v-text-field> 
+    <v-popup-date-field caption="Birth date" _id="birthDate"></v-popup-date-field> 
+   </v-form-layout> 
+  </v-horizontal-layout>  
+ </body>
+</html>
